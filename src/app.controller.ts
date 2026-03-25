@@ -11,15 +11,16 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
-  let P1 : Apiresponse ={
+  let P1 : Apiresponse<T> ={
     "success": true,
     "data": {
     "service": "purchase-api",
     "version": "1.0.0"
   },
-  "message": console.log(getHello());
+  "message": "Hello NestJS"
 
 
   }
+  console.log(P1);
 
 }
