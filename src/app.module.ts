@@ -7,9 +7,7 @@ import { ApiResponse} from './interfaces/response.interface';
 import { Interface } from 'readline';
 
 @Module({
-  imports: [
-     
-  ],
+  imports: [],
   controllers: [AppController],
   providers: [
     AppService,
@@ -17,6 +15,7 @@ import { Interface } from 'readline';
       provide: APP_FILTER,
       useClass: ApiExceptionFilter,
     },
+    
   ],
 })
 
